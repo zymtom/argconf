@@ -30,3 +30,9 @@ which will then read the config file in a format like this
 pause=true
 lines=2
 ```
+
+After the variables have been provided the first returned variable will contain the data, and you can reach it like this:
+```
+values["file"].(string)
+```
+You need to specify the type like I've done above aswell
