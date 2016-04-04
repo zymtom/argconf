@@ -7,7 +7,7 @@ import (
     "bufio"
     "errors"
 )
-func handleParams(params map[string][]string)(map[string]interface{}, error){
+func HandleParams(params map[string][]string)(map[string]interface{}, error){
     args := map[string]interface{}{}
     args["config"] = flag.String("config", "", "Config file to read from, may be used as an alternative to writing cli over and over")
     for k, v := range params {
