@@ -8,6 +8,9 @@ go get github.com/zymtom/argconf
 Usage:
 
 ```
+import "github.com/zymtom/argconf"
+...
+...
 paramMap := map[string][]string{
     "file":[]string{"string", "", "File you want to be printed"},
     "pause":[]string{"bool", "false", "Pause before exiting"},
